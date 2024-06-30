@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suikou</title>
+    <title>@yield('title', 'Suikou')</title>
     @vite('resources/css/app.css')
 </head>
 
@@ -12,12 +12,11 @@
 
     <div class="container mx-auto px-4">
         <header class="text-center py-4">
-            <h1 class="text-3xl font-bold">Welcome to Suikou</h1>
+            <h1 class="text-3xl font-bold">Suikou</h1>
         </header>
 
         <main class="py-8">
-            <h2 class="text-2xl mb-4">Portfolio</h2>
-            <p>This is the main page of the portfolio site.</p>
+            @yield('content')
         </main>
 
         <footer class="text-center py-4">
