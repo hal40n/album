@@ -17,7 +17,7 @@ class Download extends Model
         'downloaded_at',
     ];
 
-    protected $timestamps = false;
+    public $timestamps = false;
 
     public function user()
     {

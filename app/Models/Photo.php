@@ -21,11 +21,11 @@ class Photo extends Model
         'is_face_present' => 'boolean',
     ];
 
-    protected $timestamps = true;
+    public $timestamps = true;
 
     public function PhotoTags()
     {
-        return $this->hasMany(PhotoTag::class, 'photo_id', 'id')
+        return $this->hasMany(PhotoTag::class, 'photo_id', 'id');
     }
 
     public function downloads()

@@ -16,7 +16,7 @@ class PhotoTag extends Model
         'tag'
     ];
 
-    protected $timestamps = false;
+    public $timestamps = false;
 
     public function photo()
     {

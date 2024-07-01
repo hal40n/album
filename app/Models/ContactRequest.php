@@ -19,7 +19,7 @@ class ContactRequest extends Model
         'details',
     ];
 
-    protected $timestamps = true;
+    public $timestamps = true;
 
     protected $casts = [
         'name'=> 'string',

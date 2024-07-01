@@ -16,7 +16,7 @@ class SignedUrl extends Model
         'expiration',
     ];
 
-    protected $timestamps = true;
+    public $timestamps = true;
 
     protected $casts = [
         'url' => 'string',
