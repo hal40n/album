@@ -3,12 +3,12 @@
 @section('title', 'Photo Album')
 
 @section('content')
-<h2 class="text-2xl mb-4">My Photos</h2>
-<div class="grid grid-cols-3 gap-4">
-    <!-- 写真をここに追加 -->
-    <div class="bg-white rounded shadow-md">
-        <img src="https://via.placeholder.com/150" alt="Photo" class="w-full h-auto">
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+    @foreach ($photos as $photo)
+    <div class="hover-up bg-white rounded shadow-md overflow-hidden">
+        <img src="{{ $photo->file_path }}" alt="{{ $photo->caption }}" class="w-full h-48 object-cover">
     </div>
-    <!-- 他の写真も同様に追加 -->
+    @endforeach
+    {{ $photos->links() }}
 </div>
 @endsection
