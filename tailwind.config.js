@@ -8,7 +8,7 @@ export default {
     theme: {
         extend: {
             boxShadow: {
-                'hover-shadow': '0 2px 3px rgba(0, 0, 0, 0.3)',
+                'hover-shadow': '5px 5px 5px rgba(0, 0, 0, 0.3)',
             },
             translate: {
                 '-3': '-0.1875rem',

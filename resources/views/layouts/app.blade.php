@@ -29,7 +29,7 @@
                     </button>
                     <ul id="menu"
                         class="fixed top-20 left-0 z-30 flex w-full translate-x-full flex-col text-center text-white transition-all ease-linear sm:static sm:w-full sm:translate-x-0 sm:flex-row sm:place-items-center sm:bg-gray-100 sm:text-black">
-                        <li class="p-3"><a href="">TOP</a></li>
+                        <li class="p-3"><a href="#">TOP</a></li>
                         <li class="p-3"><a href="">ABOUT</a></li>
                         <li class="p-3"><a href="https://www.hal40n.com" target="">BLOG</a></li>
                         <li class="p-3"><a href="">CONTACT</a></li>
